@@ -11,7 +11,11 @@ function getBaseUrl()
     $hostName = $_SERVER['HTTP_HOST']; 
     
     // output: http://
-    $protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https://'?'https://':'http://';
+    //$protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"],0,5))=='https://'?'https://':'http://';
+	if(isset($_SERVER["HTTPS"])) {
+		$protocol = "https://";
+	} else 
+		$protocol = "http://";
     
     // return: http://localhost/myproject/
     return $protocol.$hostName.$pathInfo['dirname']."/";

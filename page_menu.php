@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain; charset=utf-8');
 include("./aplicacion/bdd/PdoWrapper.php");
 require_once("./include/dabejas_config.php");
 

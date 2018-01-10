@@ -1,6 +1,10 @@
+<?php
+header('Content-type: text/plain; charset=utf-8');
+?>
 <html>
 <head>
-<meta  http-equiv="Content-Type" content="text/html; UTF-8">
+<meta http-equiv="Content-Type" content="text/html; UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo getBaseUrl(); ?>css/style.css" />
 <script src="<?php echo getBaseUrl(); ?>js/jquery.js"></script>

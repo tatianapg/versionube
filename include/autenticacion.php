@@ -1,4 +1,5 @@
 <?PHP
+header('Content-type: text/plain; charset=utf-8');
 /*
 Registration/Login script from HTML Form Guide
 V1.0
@@ -280,7 +281,7 @@ class Autenticacion
         $cadena .= "</ul>";  //del colapsible      
                 
         //echo $cadena;
-        return $cadena;
+        return utf8_encode($cadena);
     }
 	
 }
